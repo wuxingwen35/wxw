@@ -5,5 +5,4 @@ urlpatterns=[
     path('<int:movie_id>', views.moviedetail, name='moviedetail'),
     path('<int:movie_id>/createmoviereview', views.createmoviereview, name='createmoviereview'),
     path('review/<int:review_id>/delete', views.deletemoviereview, name='deletemoviereview'),
-    path('review/<int:review_id>/delete', views.deletemoviereview, name='deletemoviereview'),
-]
+    path('review/<int:review_id>/update', views.updatemoviereview, name='updatemoviereview'),
